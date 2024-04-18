@@ -167,6 +167,9 @@ export const startEntries: GettingStartedStartEntryContent = [
 
 const Button = (title: string, href: string) => `[${title}](${href})`;
 
+// Removing the default getting started walkthrough - we'll add our own in our extension.
+export const walkthroughs: GettingStartedWalkthroughContent = [];
+/*
 export const walkthroughs: GettingStartedWalkthroughContent = [
 	{
 		id: 'Setup',
@@ -483,3 +486,4 @@ export const walkthroughs: GettingStartedWalkthroughContent = [
 		}
 	}
 ];
+*/
