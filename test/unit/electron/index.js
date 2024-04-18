@@ -204,9 +204,9 @@ app.on('ready', () => {
 				version: '1.x.y',
 				nameShort: 'Stencila',
 				nameLong: 'Stencila',
-				applicationName: 'code-oss',
-				dataFolderName: '.vscode-oss',
-				urlProtocol: 'code-oss',
+				applicationName: 'stencila',
+				dataFolderName: '.stencila',
+				urlProtocol: 'stencila',
 			}
 		};
 	});
