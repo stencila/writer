@@ -32,8 +32,8 @@ else if (globalThis._VSCODE_PRODUCT_JSON && globalThis._VSCODE_PACKAGE_JSON) {
 		Object.assign(product, {
 			nameShort: `${product.nameShort}`,
 			nameLong: `${product.nameLong}`,
-			dataFolderName: `${product.dataFolderName}-dev`,
-			serverDataFolderName: product.serverDataFolderName ? `${product.serverDataFolderName}-dev` : undefined
+			dataFolderName: `${product.dataFolderName}`,
+			serverDataFolderName: product.serverDataFolderName ? `${product.serverDataFolderName}` : undefined
 		});
 	}
 

@@ -366,7 +366,7 @@ function getArgvConfigPath() {
 
 	let dataFolderName = product.dataFolderName;
 	if (process.env['VSCODE_DEV']) {
-		dataFolderName = `${dataFolderName}-dev`;
+		dataFolderName = `${dataFolderName}`;
 	}
 
 	// @ts-ignore
