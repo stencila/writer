@@ -626,3 +626,9 @@ configurationRegistry.registerConfiguration({
 		}
 	}
 });
+
+// STENCILA: deregistered the activityBar view & removed the settings.
+Registry.as<IViewContainersRegistry>(ViewExtensions.ViewContainersRegistry).deregisterViewContainer(viewContainer);
+configurationRegistry.deregisterConfigurations([{
+	id: 'debug'
+}])
