@@ -64,7 +64,8 @@ const compilations = [
 	'extensions/typescript-language-features/test-workspace/tsconfig.json',
 	'extensions/typescript-language-features/web/tsconfig.json',
 	'extensions/typescript-language-features/tsconfig.json',
-	'extensions/vscode-api-tests/tsconfig.json',
+	// STENCILA: disable this extension as part of build.
+	// 'extensions/vscode-api-tests/tsconfig.json',
 	'extensions/vscode-colorize-tests/tsconfig.json',
 	'extensions/vscode-test-resolver/tsconfig.json',
 

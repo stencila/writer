@@ -43,7 +43,8 @@ const dirs = [
 	'extensions/simple-browser',
 	'extensions/tunnel-forwarding',
 	'extensions/typescript-language-features',
-	'extensions/vscode-api-tests',
+	// STENCILA: disable this extension in build
+	// 'extensions/vscode-api-tests',
 	'extensions/vscode-colorize-tests',
 	'extensions/vscode-test-resolver',
 	'remote',
