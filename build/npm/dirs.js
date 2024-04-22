@@ -48,8 +48,9 @@ const dirs = [
 	// 'extensions/vscode-api-tests',
 	'extensions/vscode-colorize-tests',
 	'extensions/vscode-test-resolver',
-	'remote',
-	'remote/web',
+	// STENCILA: disable this extension in build
+	// 'remote',
+	// 'remote/web',
 	'test/automation',
 	'test/integration/browser',
 	'test/monaco',
