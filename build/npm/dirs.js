@@ -41,7 +41,8 @@ const dirs = [
 	'extensions/references-view',
 	'extensions/search-result',
 	'extensions/simple-browser',
-	'extensions/tunnel-forwarding',
+	// STENCILA: disable this extension in build
+	// 'extensions/tunnel-forwarding',
 	'extensions/typescript-language-features',
 	// STENCILA: disable this extension in build
 	// 'extensions/vscode-api-tests',
