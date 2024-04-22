@@ -167,10 +167,16 @@ export const startEntries: GettingStartedStartEntryContent = [
 
 const Button = (title: string, href: string) => `[${title}](${href})`;
 
-// Removing the default getting started walkthrough - we'll add our own in our extension.
-export const walkthroughs: GettingStartedWalkthroughContent = [];
+
 /*
-export const walkthroughs: GettingStartedWalkthroughContent = [
+ * STENCILA: override walkthroughs
+ **/
+export const walkthroughs: GettingStartedWalkthroughContent = [];
+
+/*
+ * STENCILA: disable original walkthroughs
+ **/
+export const __walkthroughs: GettingStartedWalkthroughContent = [
 	{
 		id: 'Setup',
 		title: localize('gettingStarted.setup.title', "Get Started with VS Code"),
@@ -486,4 +492,3 @@ export const walkthroughs: GettingStartedWalkthroughContent = [
 		}
 	}
 ];
-*/
