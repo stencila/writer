@@ -204,9 +204,9 @@ app.on('ready', () => {
 				version: '1.x.y',
 				nameShort: 'Stencila',
 				nameLong: 'Stencila',
-				applicationName: 'stencila',
-				dataFolderName: '.stencila',
-				urlProtocol: 'stencila',
+				applicationName: 'stencila-oss',
+				dataFolderName: '.stencila-oss',
+				urlProtocol: 'stencila-oss',
 			}
 		};
 	});
