@@ -30,10 +30,10 @@ else if (globalThis._VSCODE_PRODUCT_JSON && globalThis._VSCODE_PACKAGE_JSON) {
 	// Running out of sources
 	if (env['VSCODE_DEV']) {
 		Object.assign(product, {
-			nameShort: `${product.nameShort}`,
-			nameLong: `${product.nameLong}`,
+			nameShort: `${product.nameShort} Dev`,
+			nameLong: `${product.nameLong}-dev`,
 			dataFolderName: `${product.dataFolderName}`,
-			serverDataFolderName: product.serverDataFolderName ? `${product.serverDataFolderName}` : undefined
+			serverDataFolderName: product.serverDataFolderName ? `${product.serverDataFolderName}-dev` : undefined
 		});
 	}
 
@@ -64,10 +64,10 @@ else {
 			applicationName: 'stencila',
 			dataFolderName: '.stencila',
 			urlProtocol: 'stencila',
-			reportIssueUrl: 'https://github.com/microsoft/vscode/issues/new',
+			reportIssueUrl: 'https://github.com/stencila/writer/issues/new',
 			licenseName: 'MIT',
-			licenseUrl: 'https://github.com/microsoft/vscode/blob/main/LICENSE.txt',
-			serverLicenseUrl: 'https://github.com/microsoft/vscode/blob/main/LICENSE.txt'
+			licenseUrl: 'https://github.com/stencila/writer/blob/main/LICENSE.txt',
+			serverLicenseUrl: 'https://github.com/stencila/writer/blob/main/LICENSE.txt'
 		});
 	}
 }
