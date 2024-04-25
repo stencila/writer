@@ -141,17 +141,18 @@ export const startEntries: GettingStartedStartEntryContent = [
 			command: 'command:welcome.showAllWalkthroughs',
 		}
 	},
-	{
-		id: 'topLevelRemoteOpen',
-		title: localize('gettingStarted.topLevelRemoteOpen.title', "Connect to..."),
-		description: localize('gettingStarted.topLevelRemoteOpen.description', "Connect to remote development workspaces."),
-		when: '!isWeb',
-		icon: Codicon.remote,
-		content: {
-			type: 'startEntry',
-			command: 'command:workbench.action.remote.showMenu',
-		}
-	},
+	// STENCILA: don't allow the remote "connect to" option on the welcome screen.
+	// {
+	// 	id: 'topLevelRemoteOpen',
+	// 	title: localize('gettingStarted.topLevelRemoteOpen.title', "Connect to..."),
+	// 	description: localize('gettingStarted.topLevelRemoteOpen.description', "Connect to remote development workspaces."),
+	// 	when: '!isWeb',
+	// 	icon: Codicon.remote,
+	// 	content: {
+	// 		type: 'startEntry',
+	// 		command: 'command:workbench.action.remote.showMenu',
+	// 	}
+	// },
 	{
 		id: 'topLevelOpenTunnel',
 		title: localize('gettingStarted.topLevelOpenTunnel.title', "Open Tunnel..."),
@@ -167,7 +168,16 @@ export const startEntries: GettingStartedStartEntryContent = [
 
 const Button = (title: string, href: string) => `[${title}](${href})`;
 
-export const walkthroughs: GettingStartedWalkthroughContent = [
+
+/*
+ * STENCILA: override walkthroughs
+ **/
+export const walkthroughs: GettingStartedWalkthroughContent = [];
+
+/*
+ * STENCILA: disable original walkthroughs
+ **/
+export const __walkthroughs: GettingStartedWalkthroughContent = [
 	{
 		id: 'Setup',
 		title: localize('gettingStarted.setup.title', "Get Started with VS Code"),

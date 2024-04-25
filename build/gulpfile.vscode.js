@@ -319,15 +319,19 @@ function packageTask(platform, arch, sourceFolderName, destinationFolderName, op
 				'resources/win32/sass.ico',
 				'resources/win32/shell.ico',
 				'resources/win32/sql.ico',
+				// STENCILA: added new ico
+				'resources/win32/stencila.ico',
 				'resources/win32/typescript.ico',
 				'resources/win32/vue.ico',
 				'resources/win32/xml.ico',
 				'resources/win32/yaml.ico',
-				'resources/win32/code_70x70.png',
-				'resources/win32/code_150x150.png'
+				// STENCILA: replaced png
+				'resources/win32/stencila_70x70.png',
+				'resources/win32/stencila_150x150.png'
 			], { base: '.' }));
 		} else if (platform === 'linux') {
-			all = es.merge(all, gulp.src('resources/linux/code.png', { base: '.' }));
+			// STENCILA: replacing icon
+			all = es.merge(all, gulp.src('resources/linux/stencila.png', { base: '.' }));
 		} else if (platform === 'darwin') {
 			const shortcut = gulp.src('resources/darwin/bin/code.sh')
 				.pipe(replace('@@APPNAME@@', product.applicationName))

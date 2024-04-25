@@ -88,7 +88,8 @@ exports.config = {
     productAppName: product.nameLong,
     companyName: 'Microsoft Corporation',
     copyright: 'Copyright (C) 2024 Microsoft. All rights reserved',
-    darwinIcon: 'resources/darwin/code.icns',
+    // STENCILA: change darwin app icon
+    darwinIcon: 'resources/darwin/stencila.icns',
     darwinBundleIdentifier: product.darwinBundleIdentifier,
     darwinApplicationCategoryType: 'public.app-category.developer-tools',
     darwinHelpBookFolder: 'VS Code HelpBook',
@@ -120,6 +121,8 @@ exports.config = {
         darwinBundleDocumentType(['gemspec', 'rb', 'erb'], 'Ruby', 'source code'),
         darwinBundleDocumentType(['scss', 'sass'], 'SASS', 'file'),
         darwinBundleDocumentType(['sql'], 'SQL', 'script'),
+        // STENCILA: added stencila icon
+        darwinBundleDocumentType(['smd'], 'Stencila'),
         darwinBundleDocumentType(['ts'], 'TypeScript', 'file'),
         darwinBundleDocumentType(['tsx', 'jsx'], 'React', 'source code'),
         darwinBundleDocumentType(['vue'], 'Vue', 'source code'),
@@ -179,7 +182,7 @@ exports.config = {
     darwinForceDarkModeSupport: true,
     darwinCredits: darwinCreditsTemplate ? Buffer.from(darwinCreditsTemplate({ commit: commit, date: new Date().toISOString() })) : undefined,
     linuxExecutableName: product.applicationName,
-    winIcon: 'resources/win32/code.ico',
+    winIcon: 'resources/win32/stencila.ico',
     token: process.env['GITHUB_TOKEN'],
     repo: product.electronRepository || undefined,
     validateChecksum: true,

@@ -206,11 +206,13 @@ function packageTask(sourceFolderName, destinationFolderName) {
 			.pipe(filter(['**', '!**/package-lock.json']))
 			.pipe(util.cleanNodeModules(path.join(__dirname, '.webignore')));
 
-		const favicon = gulp.src('resources/server/favicon.ico', { base: 'resources/server' });
+		// STENCILA: changed favicon
+		const favicon = gulp.src('resources/server/stencila-favicon.ico', { base: 'resources/server' });
 		const manifest = gulp.src('resources/server/manifest.json', { base: 'resources/server' });
+		// STENCILA: changed icons
 		const pwaicons = es.merge(
-			gulp.src('resources/server/code-192.png', { base: 'resources/server' }),
-			gulp.src('resources/server/code-512.png', { base: 'resources/server' })
+			gulp.src('resources/server/stencila-192.png', { base: 'resources/server' }),
+			gulp.src('resources/server/stencila-512.png', { base: 'resources/server' })
 		);
 
 		const all = es.merge(

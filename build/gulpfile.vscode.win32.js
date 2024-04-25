@@ -151,7 +151,8 @@ function copyInnoUpdater(arch) {
  */
 function updateIcon(executablePath) {
 	return cb => {
-		const icon = path.join(repoPath, 'resources', 'win32', 'code.ico');
+		// STENCILA: changed icon
+		const icon = path.join(repoPath, 'resources', 'win32', 'stencila.ico');
 		rcedit(executablePath, { icon }, cb);
 	};
 }
