@@ -83,6 +83,7 @@
 	],
 	"extensionAllowedProposedApi": ["stencila.extension.editor"],
 	"workbench": {
-		"colorTheme": "stencila.extension.editor.StencilaLight"
+		"colorTheme": "stencila.extension.editor.StencilaLight",
+		"iconTheme": "stencila.extension.editor.StencilaIcons"
 	}
 }
