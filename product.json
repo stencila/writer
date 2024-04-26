@@ -80,5 +80,9 @@
 				"publisherDisplayName": "Microsoft"
 			}
 		}
-	]
+	],
+	"extensionAllowedProposedApi": ["stencila.extension.editor"],
+	"workbench": {
+		"colorTheme": "stencila.extension.editor.StencilaLight"
+	}
 }
