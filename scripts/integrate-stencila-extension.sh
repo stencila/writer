@@ -33,14 +33,17 @@ else
 fi
 
 # cleanup existing extension
-rm -rf ${EXTENSION_PATH}
+rm -rf ${EXTENSION_PATH} ${EXTENSION_REPO_NAME}
 
 # clone stencila repo
-git clone ${EXTENSION_REPO} ${EXTENSION_REPO_NAME}
+git clone --depth 1 -- ${EXTENSION_REPO} ${EXTENSION_REPO_NAME}
 # move stencila vscode directory to extensions
 mv ${EXTENSION_REPO_NAME}/${EXTENSION_REPO_FOLDER_NAME} ${EXTENSION_PATH}
 
 # compile extension
 npm --prefix ${EXTENSION_PATH} i && npm --prefix ${EXTENSION_PATH} run compile
+
+# clean up
+rm -rf ${EXTENSION_REPO_NAME}
 
 exit 0
