@@ -34,5 +34,3 @@
 **/test/automation/out/**
 **/typings/**
 !.vscode
-# STENCILA: ignore our vscode extension
-**/extensions/stencila-editor/**
