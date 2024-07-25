@@ -335,8 +335,8 @@ function packageTask(type, platform, arch, sourceFolderName, destinationFolderNa
 			// STENCILA: changed icons
 			web = [
 				'resources/server/stencila-favicon.ico',
-				'resources/server/manifest-192.png',
-				'resources/server/manifest-512.png',
+				'resources/server/stencila-192.png',
+				'resources/server/stencila-512.png',
 				'resources/server/manifest.json'
 			].map(resource => gulp.src(resource, { base: '.' }).pipe(rename(resource)));
 		}
