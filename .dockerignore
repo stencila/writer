@@ -1,0 +1,3 @@
+# STENCILA: ignore files when creating Docker image to
+# reduce Docker context size.
+node_modules

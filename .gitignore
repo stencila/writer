@@ -21,6 +21,7 @@ vscode.db
 product.overrides.json
 *.snap.actual
 .vscode-test
-# STENCILA: exclude stencila repo (added when cloning)
+
+# STENCILA: exclude stencila binary and extension copied into here
 /stencila
 /extensions/stencila*
